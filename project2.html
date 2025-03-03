@@ -1,0 +1,216 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>E-commerce
+        Business Insights</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <a href="index.html" class="logo">My Portfolio</a>
+        </header>
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul class="links">
+                <li class="active"><a href="index.html">Projects</a></li>
+                <li><a href="AboutMe.html">About Me</a></li>
+            </ul>
+            <ul class="icons">
+                <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Project Section -->
+            <section class="post">
+                <header class="major">
+                    <h1>E-commerce
+                        Business Insights</h1>
+                        <p class="subtitle">Transforming raw e-commerce data into actionable insights with Python, Power BI, and interactive visualizations</p>
+                </header>
+                <h2>Project Summary</h2>
+                    <p><b>Who Is This Project For?</b><br />
+                    This analysis is designed to give business analysts, e-commerce managers, marketing managers, or financial analysts a well-designed dashboard that can provide a deep level of understanding of an E-commerce business.</p>
+                    <p><b>What Are the Goals?</b><br />
+                        The goal of this project is to transform raw sales data into meaningful business insights using Python for data cleaning and Power BI for visualization. This interactive dashboard helps answer critical business questions, including:<br />
+                    🎯 How does sales performance compare across categories<br />
+                    🎯 Which products are the top and worst sellers?<br />
+                    🎯 How does customer churn evolve over time?<br />
+                    🎯 How long does it take to fulfill an order?<br />
+                    🎯 Who are the best-performing suppliers?<br />
+                    🎯 What percentage of sales come from new customers?<br />
+                    <p><b>What Will It Consist Of?</b><br />
+                        ✔ ETL Process with Python – Extract, transform, and clean data.<br />
+                        ✔ Data Modeling in Power BI – Build relationships between tables for optimized performance.<br />
+                        ✔ Advanced DAX Calculations – Create KPIs for sales, order fulfillment, and profitability.<br />
+                        ✔ Interactive Power BI Dashboard – Visualize insights with filters, slicers, and trend analysis.<br />
+                        ✔ Publish Dashboard Online – Accessible via an online Power BI link.
+
+                    <p><b>What Tools Were Used?</b><br />                        
+                        🔹 Python (Pandas, NumPy) → Data cleaning & transformation.<br />
+                        🔹 DAX → Calculated measures for insights.<br />
+                        🔹 Power BI → Data modeling, visualization, and interactive dashboard creation.<br />
+                <h2>Dataset Description</h2>
+                    The dataset consists of 8 .CSV files representing different business operations:<br />                
+                    <b>Customers</b> – Customer profiles with contact details.<br />
+                    <b>Orders</b> – Sales transactions, including order dates and total amounts.<br />
+                    <b>Order Items</b> – Individual products purchased within each order.<br />
+                    <b>Payments</b> – Payment methods and transaction statuses.<br />
+                    <b>Products</b> – Product catalog, including pricing and supplier details.<br />
+                    <b>Reviews</b> – Customer ratings and feedback on purchases.<br />
+                    <b>Shipments</b> – Shipment tracking details, including delivery times.<br />
+                    <b>Suppliers</b> – Supplier information for product sourcing.<br />            
+                    The dataset required cleaning before analysis, ensuring accurate insights.<br />
+                    <br />
+                <h2>Analysis Steps</h2>
+
+               <h3>1️⃣ Defining the Business Questions</h3>
+               The first step was to explore the data from a business perspective, identifying valuable insights that could drive decision-making. By examining sales, customer behavior, supplier performance, and delivery trends, I determined how these datasets connect and what patterns could be uncovered. This ensured the analysis provided actionable insights rather than just beautiful sets of visual with low added value.<br />
+               <br />   
+               <h3>2️⃣ Data Cleaning & Transformation (ETL with Python)</h3>
+                    Before analysis, the raw dataset was processed using Python (Pandas, NumPy):<br />
+
+                    ✔ Checked for inconsistencies in data types (dates stored as text, missing numeric values).<br />
+                    ✔ Standardized column names for consistency across datasets.<br />
+                    ✔ Handled null values by filling missing data appropriately.<br />
+                    ✔ Removed duplicate records for better accuracy.<br />
+                    ✔ Fixed inconsistent data patterns (e.g., phone numbers, supplier codes).<br />
+                    You can find the Python code I used for data cleaning in My GitHub profile by clicking <a href="https://github.com/M-Mortazavi/PowerBI-Business-Insights/blob/main/Ecommerce-Data-Cleaning.py"><b>HERE</b>.</a></p>
+
+               <!-- Image 1 -->
+            <div class="image main" style="max-width: 60%; margin: 20px 0; text-align: left;">
+                <img src="images/Data-cleaning.jpg" alt="Data cleaning with Python" style="width: 100%; display: block;" />
+            </div>
+               <br />
+               <h3>3️⃣ Data Modeling in Power BI</h3>
+               The data is structured using a Snowflake Schema, with Orders as the central fact table, linking to Order Items, Payments, and Shipments for transaction details.<br />
+
+                Dimension tables provide business context:<br />
+
+                Customers connect to Orders and Reviews, linking purchases to feedback.<br />
+                Products relate to Order Items, Reviews, and Suppliers, enabling analysis of sales, supplier performance, and ratings.<br />
+                Shipments and Payments are linked to Orders for fulfillment and transaction tracking.<br />
+                This normalized structure optimizes performance while allowing for detailed trend analysis and flexible filtering across multiple business dimensions.<br />
+                
+                <!-- Image 2 -->
+            <div class="image main" style="max-width: 60%; margin: 20px 0; text-align: left;">
+                <img src="images/Data-Model.jpg" alt="Data Model Power BI" style="width: 100%; display: block;" />
+            </div>
+               <br />
+
+               <h3>4️⃣ Adding Key Calculated Measures (DAX)</h3>
+               Advanced DAX formulas were created to track performance:<br />
+
+                ✔ Promotion Expenses → (Price - Price at Purchase) * Quantity<br />
+                ✔ Order Fulfillment Time → (Order Date - Shipment Date)<br />
+                ✔ Delta Sales → Sales growth compared to the previous period.<br />
+                ✔ MTD (Month-to-Date) Sales → Tracks sales progress within the current month.<br />
+                ✔ YTD (Year-to-Date) Sales → Aggregates total sales for the current year.<br />
+                ✔ Last 30 Days Sales → Provides recent sales trends.<br />
+                ✔ AOV (Average Order Value) → Adjusts dynamically based on slicer selections.<br />
+                ✔ Order Frequency Trend → Measures how frequently customers make purchases.<br />
+                ✔ Sales & Sales Evolution Per Category → Compares product categories over time.<br />
+                ✔ Delivery Average Time → Calculates the average time taken to deliver orders.<br />
+                ✔ Successful Payment Ratio → Measures the proportion of successfully completed transactions.<br />
+                ✔ Average Shipment Days → Tracks the efficiency of shipments.<br />
+                ✔ Suppliers Sales Share → Determines each supplier's contribution to overall revenue.<br />
+                ✔ New Customer Sales Ratio → Analyzes the share of revenue from first-time buyers.<br />
+               <br />
+
+               <h3>5️⃣ Visualization & Dashboard Creation in Power BI</h3>
+                This interactive Power BI dashboard provides a comprehensive view of sales performance, customer behavior, and supplier efficiency, enabling data-driven decision-making.<br />
+                <br />
+                <!-- Image 3 -->
+            <div class="image main" style="max-width: 60%; margin: 20px 0; text-align: left;">
+                <img src="images/PowerBI-Dashboard.jpg" alt="Power BI Dashboard" style="width: 100%; display: block;" />
+            </div>
+                    📌 General Overview<br />
+                    Users can track total sales, customer churn, order fulfillment time, and supplier contributions in real-time.<br />
+
+                    📌 Sales Tab<br />
+                    The Sales Tab allows users to segment sales by new vs. returning customers, filter by date range, and select product categories to analyze trends.<br />
+
+                    📌 Deep Insights & Custom Analysis<br />
+                    Users can:<br />
+                    ✔ Compare new vs. returning customer sales.<br />
+                    ✔ Select a specific date range for analysis.<br />
+                    ✔ Filter by product category for focused insights.<br />
+
+                🔹 Example: A user can analyze electronics sales for the last six months of 2024 to identify best-selling products and top 10 suppliers in that segment.<br />
+               
+               <br />
+
+               <h3>6️⃣ Sharing the Power BI Dashboard</h3>
+               You can use the Power BI dashboard of this project here:<br />
+               <iframe title="Ecommerce-V1-Share Public" width="800" height="500.5" src="https://app.powerbi.com/view?r=eyJrIjoiZTFhMDM5YjEtNDgwNi00NGFmLWI2MTctYTI5ZjllZGUxMzFkIiwidCI6Ijc5NWY0ZTE1LWNlNmQtNGEwNC04YTY5LWJlNWY3YTU0OGFiYSJ9" frameborder="0" allowFullScreen="true"></iframe>
+               <br /> 
+               Sharing Power BI dashboards with a free license can be challenging, and it took me a week to find a working solution. Since Power BI Publish to Web is often restricted, I had to set up a Microsoft Business trial account with admin access to enable public sharing.<br />
+               <br />
+                📌 <b>Guide to Share a Power BI Dashboard for Free:</b><br />
+                1- Create a Microsoft Business Account (to have Admin Access to Power BI account)
+
+                Sign up for a trial Microsoft 365 Business account : 
+                <a href="https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products"> Mirosoft account registration link</a><br />
+            
+                Even after the trial expires, you keep Power BI access (but the Microsoft 365 account deactivates).<br />
+                <br />
+                2- Upload & Open the Dashboard in Power BI Service<br />
+
+                Sign in to Power BI Service using the same Microsoft 365 account.<br />
+                Load your Power BI report into the Power BI workspace.<br />
+                <br />
+                3- Enable Public Sharing in Power BI Admin Settings<br />
+
+                Go to Settings → Admin Portal.<br />
+                In Export and Sharing Settings, enable Publish to Web.<br />
+                Disable "Block Public Internet Access" to allow external sharing.<br />
+                <br />
+               4- Generate a Public Link for the Dashboard<br />
+
+                Open your report in Power BI Service.<br />
+                Click File → Embed Report → Publish to Web.<br />
+                Copy the public link and share it!<br />
+                ⚠ Important: This method creates a public link, meaning anyone with the link can access the dashboard. It is not suitable for sensitive or company data.
+               <br />    
+               <br /> 
+               I designed this project to showcase how data analytics, Python, and Power BI can transform raw data into actionable business insights. By implementing advanced ETL, data modeling, and interactive visualizations, I created a dynamic dashboard that empowers decision-making. Explore the insights, interact with the data, and uncover trends that drive business success!<br />
+        
+
+                
+
+            </section>
+
+        </div>
+
+        <!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; copywrite</li><li>Design: <a href="#">Morteza Mortazavi</a></li></ul>
+					</div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>

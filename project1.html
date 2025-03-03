@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>L'Oréal Luxe-Sephora
+        Sales Analysis</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <a href="index.html" class="logo">My Portfolio</a>
+        </header>
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul class="links">
+                <li class="active"><a href="index.html">Projects</a></li>
+                <li><a href="AboutMe.html">About Me</a></li>
+            </ul>
+            <ul class="icons">
+                <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Project Section -->
+            <section class="post">
+                <header class="major">
+                    <h1>L'Oréal Luxe-Sephora
+                        Sales Analysis</h1>
+                        <p class="subtitle">An advanced dashboard analyzing L'Oréal Luxe sales, market share, and competitive positioning across Europe. (Data randomized for confidentiality.)</p>
+                </header>
+
+                <h2>Project Summary</h2>
+                <p><b>Who Is This Project For?</b><br />
+                    This project is designed for high-level brand managers and business analysts of L'Oréal Luxe Europe Zone department. It provides an intuitive and interactive dashboard that delivers actionable insights with minimal technical or data expertise required. </p>
+                <p><b>What Are the Goals?</b><br />
+                    The objective of this analysis is to evaluate L'Oréal Luxe brands' sales performance, market share, sales evolution, and competitive positioning in Sephora shops across different beauty sectors, market segments, and European countries. By leveraging data modeling and advanced calculations, the project aims to provide a clear comparative view of L'Oréal Luxe's standing in the market.</p>
+                <p><b>What Will It Consist Of?</b><br />
+                    The project involves cleaning and structuring the data, developing key performance metrics, and designing a user-friendly dashboard. Since no direct relationship between datasets existed, advanced formulations and DAX functions were used to create comparative insights between L'Oréal Luxe sales and total market sales.</p>
+                <p><b>What Tools Were Used?</b><br />                        
+                    🔹 Microsoft Excel (Power Pivot, Power Query)<br />
+                    🔹 Advanced Excel Formulations (SUMPRODUCT, IFERROR, INDEX-MATCH)<br />
+                    🔹 Data Analysis Expressions (DAX)<br />
+                    🔹 Pivot Tables with Slicers for interactive reports<br />
+
+                    <!-- Image 5 -->
+        <div class="image main" style="max-width: 60%; margin: 20px 0; text-align: left;">
+            <img src="images/L'oreal-Formula.png" alt="Power BI Dashboard" style="width: 100%; display: block;" />
+        </div>     
+            <h2>Dataset Description</h2>
+                <b>The project involved two datasets:</b><br />
+
+                1- Sales Data: Containing sales figures for L'Oréal Luxe brands with more than 20,000 rows.<br />
+                
+                2- Total Market Sales Data: Containing industry-wide sales data to compare L'Oréal Luxe performance.<br />
+                
+                <b>Key challenges in the dataset:</b><br />
+                                            
+                No primary key existed to directly relate the two datasets.<br />
+                
+                Advanced formulas and DAX functions were required to establish indirect relationships and derive meaningful insights.<br />
+            <h2>Analysis Steps</h2>
+
+           <h3>1️⃣ Defining the Business Questions</h3>
+                The first step was to explore the data from a business perspective, identifying valuable insights that could drive decision-making. This ensured the analysis provided actionable insights rather than just beautiful sets of visual with low added value.<br />
+                🔹 How does L'Oréal Luxe perform compared to the total market?<br />
+                🔹 What are the best-selling brands and categories?<br />
+                🔹 How do different brands perform across various beauty sectors and European countries?<br />
+           <br />   
+           <h3>2️⃣ Data Cleaning with Excel</h3>
+                Before analysis, the raw dataset was processed:<br />
+
+                ✔ Removing duplicates.<br />
+                ✔ Handling missing values.<br />
+                ✔ Standardizing column names.<br />
+                ✔ Fixing inconsistent data patterns (e.g., phone numbers, supplier codes).<br />
+                ✔ Standardizing formats.<br />
+            <br />
+                    
+           <h3>3️⃣ Data Modeling in Power Pivot</h3>
+                ✔ Creating calculated columns and measures:<br />
+                🔹 Market Share → L'Oréal Luxe Sales / Total Market Sales<br />
+                🔹 Sales Evolution → Sales Growth compared to the previous period<br />
+                🔹 Competitive Positioning → L'Oréal Luxe Market Share - Total Market Share<br />
+                🔹 Weight of Business (WOB): Evaluates each brand’s contribution to overall sales.<br />
+                🔹 Share to Growth (CTG): Measures the contribution of each brand’s growth to overall market growth.<br />
+            <br />                
+
+           <h3>4️⃣ Creating Pivot Tables with Slicers</h3>
+           🔹 Building interactive reports where users can select the date range and specific brands to analyze.<br />
+           🔹 Ensuring easy navigation for quick insights.<br />
+            
+            <!-- Image 1 -->
+        <div class="image main" style="max-width: 60%; margin: 20px 0; text-align: left;">
+            <img src="images/L'oreal-pannel3.png" alt="Power BI Dashboard" style="width: 100%; display: block;" />
+        </div>        
+           <br />
+
+           <h3>5️⃣ Creating Easy-to-Use Summary Reports</h3>
+           🔹 Providing a clear snapshot of performance for decision-makers.<br />
+           🔹 Enabling dynamic selections for better analysis of each brand in selected period, for different regions and sectors.<br />
+           
+           <!-- Image 2 -->
+        <div class="image main" style="max-width: 60%; margin: 20px 0; text-align: left;">
+            <img src="images/L'oreal-pannel1.png" alt="Power BI Dashboard" style="width: 100%; display: block;" />
+        </div>   
+        <!-- Image 3 -->
+        <div class="image main" style="max-width: 60%; margin: 20px 0; text-align: left;">
+            <img src="images/L'oreal-pannel2.png" alt="Power BI Dashboard" style="width: 100%; display: block;" />
+        </div>          
+           <br />
+
+           <h3>6️⃣ Creating a User Guide</h3>
+           🔹Documenting step-by-step instructions to help users navigate the dashboard effectively.<br />
+           🔹Ensuring accessibility for managers with minimal technical expertise.<br />
+           <br />
+           <!-- Image 4 -->
+        <div class="image main" style="max-width: 60%; margin: 20px 0; text-align: left;">
+            <img src="images/L'oreal-pannel-Guide.png" alt="Power BI Dashboard" style="width: 100%; display: block;" />
+        </div>    
+        
+        This project showcases my expertise in data cleaning, modeling, and analysis, using Excel Power Pivot and DAX to drive meaningful business insights. It highlights how advanced formulations can be leveraged to analyze sales trends and competitive positioning even when direct relationships between datasets are not available.<br />
+
+        This dashboard is currently being used by high-level brand managers of the Europe Zone of L'Oréal Luxe to make strategic decisions based on comprehensive market insights.
+           
+        </section>
+
+    </div>
+
+        <!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; copywrite</li><li>Design: <a href="#">Morteza Mortazavi</a></li></ul>
+					</div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
