@@ -1,8 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>L'Oréal Luxe-Sephora
-        Power BI dashboard</title>
+    <title>Customer Behavior Analysis & Marketing Strategy for Razavi Perfume</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
@@ -24,12 +23,6 @@
                 <li class="active"><a href="index.html">Projects</a></li>
                 <li><a href="AboutMe.html">About Me</a></li>
             </ul>
-            <ul class="icons">
-                <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-                <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-                <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-                <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-            </ul>
         </nav>
 
         <!-- Main -->
@@ -38,40 +31,91 @@
             <!-- Project Section -->
             <section class="post">
                 <header class="major">
-                    <h1>L'Oréal Luxe-Sephora
-                        Power BI dashboard</h1>
-                        <p class="subtitle">Short introduction to the project, its purpose, and key outcomes.</p>
+                    <h1>Customer Behavior Analysis</h1>
+                    <p class="subtitle">Understanding consumer preferences and optimizing marketing strategies using survey data analysis. (Data randomized for confidentiality)</p>
                 </header>
-
-                <!-- Image 1 -->
-                <div class="image main" style="max-width: 60%; margin: 20px auto; text-align: center;">
-                    <img src="images/project1_pic1.jpg" alt="Project Image 1" style="width: 100%; display: block; margin: auto;" />
-                </div>
-                <p>Description of the first aspect of the project. Explain the context, challenge, or methodology used.</p>
-
-                <!-- Image 2 -->
-                <div class="image main" style="max-width: 60%; margin: 20px auto; text-align: center;">
-                    <img src="images/project1_pic2.jpg" alt="Project Image 2" style="width: 100%; display: block; margin: auto;" />
-                </div>
-                <p>Description of the second aspect of the project. Explain key insights, data analysis, or tools used.</p>
-
-                <!-- Image 3 -->
-                <div class="image main" style="max-width: 60%; margin: 20px auto; text-align: center;">
-                    <img src="images/project1_pic3.jpg" alt="Project Image 3" style="width: 100%; display: block; margin: auto;" />
-                </div>
-                <p>Description of the third aspect of the project. Highlight results, impact, or next steps.</p>
-
-                <!-- Topics Section -->
-                <h2>Topics Covered</h2>
                 
+                <h2>Project Summary</h2>
+                <p><b>Who Is This Project For?</b><br />
+                This project was conducted for Razavi Perfume, a perfume producer seeking to enhance online sales and marketing strategies through customer insights.</p>
+                
+                <p><b>What Are the Goals?</b><br />
+                - Identify key customer demographics and purchasing behavior.<br />
+                - Analyze factors influencing purchase decisions, including brand awareness and product preferences.<br />
+                - Measure customer satisfaction using the Net Promoter Score (NPS).<br />
+                - Provide data-driven recommendations to improve sales and brand engagement.</p>
+                <!-- Image 1 -->
+                    <div class="image main" style="max-width: 60%; margin: 20px 0; text-align: left;">
+                        <img src="images/Perfume01.png" alt="NPS Score" style="width: 100%; display: block;" />
+                    </div>
+                        
+                
+                <p><b>What Will It Consist Of?</b><br />
+                - Designing and conducting a structured survey.<br />
+                - Analyzing responses to determine purchase barriers and strengths.<br />
+                - Evaluating brand awareness, product performance, and customer loyalty.<br />
+                - Creating strategic marketing recommendations.</p>
+                <!-- Image 2 -->
+                <div class="image main" style="max-width: 60%; margin: 20px 0; text-align: left;">
+                    <img src="images/Perfume04.png" alt="NPS Score" style="width: 100%; display: block;" />
+                </div>
 
+                <p><b>What Tools Were Used?</b><br />
+                - Survey Tools for Data Collection<br />
+                - Python (pandas, numpy) for Data Cleaning & Analysis<br />
+                - Matplotlib for Data Visualization</p>
+
+                <h2>Dataset Description</h2>
+                <p>- The designed survey consisted of <b>20 questions</b> aimed at analyzing customer behavior.<br />
+                - A total of <b>409 participants</b> provided responses, contributing to a diverse dataset.</p>
+                
+                <h2>Analysis Steps</h2>
+                
+                <h3>1️⃣ Defining the Business Questions</h3>
+                <p>- Who are the primary customers of Razavi Perfume?<br />
+                - What factors influence purchase decisions?<br />
+                - What are the brand's key strengths and weaknesses?<br />
+                - How effective is social media engagement?</p>
+                
+                <h3>2️⃣ Data Cleaning with Python</h3>
+                <p>- Handled missing values and standardized qualitative responses.<br />
+                - Removed inconsistencies to ensure accurate analysis.</p>
+                
+                <h3>3️⃣ Descriptive Statistical Analysis</h3>
+                <p>- Analyzed demographics, purchase behavior, and NPS distribution.<br />
+                - Assessed Instagram engagement and spending patterns.</p>
+                
+                <h3>4️⃣ Exploratory Data Analysis (EDA)</h3>
+                <p>- Determined lack of brand awareness (43%) as the biggest purchase barrier.<br />
+                - Identified <b>longevity</b> as the most important perfume feature.<br />
+                - Highlighted <b>scent</b> as the strongest product strength and <b>longevity</b> as the main weakness.<br />
+                - Analyzed Instagram engagement, showing higher NPS among followers.<br />
+                - Studied customer spending habits, revealing most buyers spend <b>less than 1 million Tomans per year</b>.</p>
+                <!-- Image 3 -->
+                <div class="image main" style="max-width: 60%; margin: 20px 0; text-align: left;">
+                    <img src="images/Perfume05.png" alt="NPS Score" style="width: 100%; display: block;" />
+                </div>
+                <h2>Visualizing the Results and Providing Actionable Insights</h2>
+                <p>- <b>Customer Segmentation & Targeting:</b> Majority of buyers are men (2x more than women) aged 25-45. Marketing should focus on this segment while attracting female buyers.<br />
+                - <b>Social Media Strategy:</b> 61% of respondents did not follow Instagram. Increasing engagement via exclusive offers and interactive content can improve retention.<br />
+                - <b>Brand Awareness Campaigns:</b> The biggest non-purchase reason was lack of familiarity. Marketing should prioritize brand visibility.<br />
+                - <b>Product Improvement Strategy:</b> Enhancing longevity can boost satisfaction, and lower-cost variations can help retain budget-conscious customers.<br />
+                - <b>Pricing Considerations:</b> Most buyers spend less than 1 million Tomans annually. Offering affordable product variations can increase accessibility.</p>
+                <!-- Image 4 -->
+                <div class="image main" style="max-width: 60%; margin: 20px 0; text-align: left;">
+                    <img src="images/Perfume03.png" alt="NPS Score" style="width: 100%; display: block;" />
+                </div>
+                <!-- Image 5 -->
+                <div class="image main" style="max-width: 60%; margin: 20px 0; text-align: left;">
+                    <img src="images/Perfume02.png" alt="NPS Score" style="width: 100%; display: block;" />
+                </div>
             </section>
 
         </div>
 
         <!-- Copyright -->
         <div id="copyright">
-            <ul><li>&copy; 2025 Morteza Mortazavi</li><li>Design: <a href="#">Morteza Mortazavi</a></li></ul>
+            <ul><li>&copy; Copyright</li><li>Design: <a href="#">Morteza Mortazavi</a></li></ul>
         </div>
 
     </div>
